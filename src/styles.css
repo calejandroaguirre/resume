@@ -1,1 +1,180 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --first-color: #05599e;
+  --first-color-alt: #006DC6;
+  --second-color: #00CBFF;
+  --second-color-alt: #00BFF0;
+  --third-color: #FF3C32;
+  --third-color-rgba: rgba(255, 60, 50, .5);
+  --third-color-alt: #FF2419;
+  --accent-color: #FBA905;
+  --accent-color-alt: #F1A000;
+  --dark-color: #282D31;
+  --dark-color-alt: #141618;
+  --border-color: #bdbdbd;
+  --sidebar-border-bottom-color:#4783c2;
+  --secttion-text-color:#767270;
+  --card-color: #fff;
+  --text-first-column-color: #fff;
+  --body-bg: #eae8e7;
+  --font-main: sans-serif;
+  --font-size: 16px;
+  --line-height: 1.6;
+  --header-height: 8rem;
+  --max-width: 1200px;
+  --n: 2;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--font-main);
+  font-size: var(--font-size);
+  background-color: var(--body-bg);
+  line-height: var(--line-height);
+  color: var(--text-color);
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sidebar {
+  background-color: var(--first-color);
+  color: var(--text-first-column-color);
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  max-width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.sidebar .name {
+  position: absolute;
+  bottom: 7px;
+  word-wrap: break-word;
+  text-shadow: 2px 2px 2px black;
+  padding: 0 15px;
+}
+
+.sidebar .name h1 {
+  font-size: 1em;
+}
+
+.sidebat .name h3 {
+  font-size: .7em
+}
+
+.sidebar aside {
+  width: 100%;
+  min-height: 100px;
+  font-size: .9em;
+  line-height: 1.1em
+}
+
+.sidebar aside.mail span {
+  font-size: 12px;
+}
+
+.sidebar aside .icon {
+  width: 25%;
+  text-align: center;
+  vertical-align: top;
+  font-size: 2em;
+}
+
+.sidebar aside span {
+  display: inline-block;
+  width: 73%;
+  border-bottom: 1px solid var(--sidebar-border-bottom-color);
+  min-height: 100px;
+  height: 100%;
+}
+
+.sidebar .image {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.sidebar .image img {
+  width: 100%;
+  align-self: center;
+}
+
+.sidebar .position {
+  font-size: .7em;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  padding: 10px;
+  color: var(--secttion-text-color);
+}
+
+section>div {
+  min-height: 500px;
+  width: 100%;
+  background-color: var(--card-color);
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+}
+
+.section-icon {
+  font-size: 30pt;
+  text-align: center;
+  width: 20%;
+}
+
+.section-content {
+  width: 80%;
+}
+
+.section-content-wrapper:not(:last-child){
+  border-bottom: 1px solid var(--border-color);
+}
+.section-content-wrapper{
+  margin-bottom: 25px;
+}
+
+.section-content h2 {
+  font-size: 22pt;
+  line-height: 37pt;
+  margin-top: 6px;
+  margin-bottom: 25px;
+}
+
+.section-content h3 {
+  font-size: 12pt;
+  line-height: 20pt;
+}
+
+.section-content span {
+  font-size: 10pt;
+  line-height: 15pt;
+  color: #5da4d9;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 10pt;
+  line-height: 17pt;
+}
+
+.section-content p {
+  margin-bottom: 25px;
+}
