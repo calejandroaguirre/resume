@@ -1,29 +1,27 @@
 :root {
   --first-color: #05599e;
   --first-color-alt: #006DC6;
+  --text-first-column-color: #fff;
+  --sidebar-border-bottom-color:#4783c2;
+  --section-text-color:#767270;
+  --card-color: #fff;
+  --border-color: #bdbdbd;
+  --skill-backgroud: #4783c2;
   --second-color: #00CBFF;
   --second-color-alt: #00BFF0;
-  --third-color: #FF3C32;
-  --third-color-rgba: rgba(255, 60, 50, .5);
-  --third-color-alt: #FF2419;
-  --accent-color: #FBA905;
-  --accent-color-alt: #F1A000;
   --dark-color: #282D31;
   --dark-color-alt: #141618;
-  --border-color: #bdbdbd;
-  --sidebar-border-bottom-color:#4783c2;
-  --secttion-text-color:#767270;
-  --card-color: #fff;
-  --text-first-column-color: #fff;
   --body-bg: #eae8e7;
   --font-main: sans-serif;
   --font-size: 16px;
   --line-height: 1.6;
-  --header-height: 8rem;
-  --max-width: 1200px;
-  --n: 2;
 }
 
+*, *::after, *::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
 html {
   box-sizing: border-box;
   font-family: var(--font-main);
@@ -33,10 +31,9 @@ html {
   color: var(--text-color);
 }
 
-*, *::after, *::before {
-  box-sizing: inherit;
-  padding: 0;
-  margin: 0;
+
+h3{
+  margin-bottom: 10px;
 }
 
 .container {
@@ -77,26 +74,32 @@ html {
   width: 100%;
   min-height: 100px;
   font-size: .9em;
-  line-height: 1.1em
+  line-height: 1.1em;
+  margin-bottom: 10pt;
 }
 
 .sidebar aside.mail span {
   font-size: 12px;
 }
 
-.sidebar aside .icon {
+.sidebar aside .icon{
   width: 25%;
   text-align: center;
   vertical-align: top;
   font-size: 2em;
 }
 
-.sidebar aside span {
+.sidebar aside>span, 
+.sidebar aside .skills-bars {
   display: inline-block;
   width: 73%;
-  border-bottom: 1px solid var(--sidebar-border-bottom-color);
   min-height: 100px;
   height: 100%;
+  padding-bottom: 10pt;
+}
+
+.sidebar aside:not(:last-child) span {
+  border-bottom: 1px solid var(--sidebar-border-bottom-color);
 }
 
 .sidebar .image {
@@ -119,7 +122,7 @@ section {
   flex-direction: column;
   width: 800px;
   padding: 10px;
-  color: var(--secttion-text-color);
+  color: var(--section-text-color);
 }
 
 section>div {
@@ -174,7 +177,39 @@ p {
   font-size: 10pt;
   line-height: 17pt;
 }
-
 .section-content p {
   margin-bottom: 25px;
+}
+.progress {
+  height: 2px;
+  background-color: var(--skill-backgroud);
+  border-radius: 5px;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.determinate{
+  background-color: var(--card-color);
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 2px;
+}
+
+.determinate .fa-circle{
+  position: absolute;
+  top:-5px;
+  font-size: 12px;
+  right: 0;
+}
+
+@media only screen and (max-width:800px){
+  .container{
+    flex-direction: column;
+  }
+  .sidebar{
+    max-width:100%;
+  }
+  section{
+    width: 100%;
+  }
 }
