@@ -56,8 +56,8 @@ export class AppComponent {
     ,{name: 'Ingenieria en Sistemas Computacionales', about: '', duration: 4.5, unitOfDuration: 'years', institute:'ITCHII'}
   ];
   profiles: Array<IProfile> = [
-    {name: 'github', link:'https://github.com/calejandroaguirre', class:"fab fa-github"}
-    ,{name: 'linkedIn', link:'https://www.linkedin.com/in/carlos-alejandro-aguirre-lopez-47794065/', class:"fab fa-linkedin-in"}
-    ,{name: 'web', link:'https://calejandroaguirre.com', class:"fas fa-globe"}
+    {name: 'github', link:'https://github.com/calejandroaguirre', class:"fab fa-github", color:"#000"}
+    ,{name: 'linkedIn', link:'https://www.linkedin.com/in/carlos-alejandro-aguirre-lopez-47794065/', class:"fab fa-linkedin-in", color:"#0077b5"}
+    ,{name: 'web', link:'https://calejandroaguirre.com', class:"fas fa-globe", color:"#f84757"}
   ]
 }

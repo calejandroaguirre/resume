@@ -89,7 +89,7 @@
           <div>
             <ul>
               <li *ngFor="let profile of profiles" [style.width.%]="100 / profiles.length">
-                <i class="{{profile.class}}" ><a href="{{profile.link}}"></a></i>
+                <i><a class="{{profile.class}}" target="_blank" [style.color]="profile.color" href="{{profile.link}}"></a></i>
               </li>
             </ul>
           </div>
