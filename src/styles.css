@@ -164,8 +164,13 @@ section>div {
   font-size: 12pt;
   line-height: 20pt;
 }
+.section-content h3>p{
+  color: var(--text-color);
+  font-size: 11px;
+  margin-bottom: 0;
+}
 
-.section-content span {
+.section-content .section-date {
   font-size: 10pt;
   line-height: 15pt;
   color: #5da4d9;
@@ -201,7 +206,20 @@ p {
   font-size: 12px;
   right: 0;
 }
-
+.section-interestes{
+  min-height: initial;
+}
+.section-interestes ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  color:var(--first-color);
+}
+.section-interestes ul li{
+  display: inline-block;
+  width: 19%;
+}
 @media only screen and (max-width:800px){
   .container{
     flex-direction: column;
