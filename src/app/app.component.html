@@ -5,134 +5,121 @@
     <div class="image">
       <div class="name">
         <h1>
-          Carlos Alejandro Aguirre López
+          {{name}}
         </h1>
         <h3 class="position">
-          Software developer
+          {{position}}
         </h3>
       </div>
 
-      <img src="https://www.gravatar.com/avatar/00000000000000000000000000000000?s=300" />
+      <img src="{{urlImage}}" />
       <!-- <img src="https://s.gravatar.com/avatar/cb5426da0f56e5bc2b26906ef54b8e5e?s=300"/> -->
     </div>
     <aside>
       <i class="icon fas fa-user"></i>
-      <span>Enim placeat sunt quos in, animi inventore maxime ab sequi odio sed omnis voluptas id doloremque expedita magnam veniam
-        eaque accusamus aliquam hic, vel repellendus ipsum. Quas ratione eaque hic!</span>
+      <span>{{about}}</span>
     </aside>
     <aside class="phone">
       <i class="icon fas fa-phone"></i>
-      <span>(614)239-39-02</span>
+      <span>{{phone}}</span>
     </aside>
     <aside class="mail">
       <i class="icon fas fa-envelope"></i>
-      <span>calejandroaguirre@outlook.com</span>
+      <span>{{mail}}</span>
     </aside>
     <aside class="address">
       <i class="icon fas fa-home"></i>
-      <span>Paseos de urique #15501 Col. Paseos de Chihuahua, Chihuahua Chihuahua México</span>
+      <span>{{address}}</span>
     </aside>
-    <aside class="skills">
+    <aside class="skills" *ngIf="skills.length > 0">
       <i class="icon fas fa-calendar"></i>
       <div class="skills-bars">
         <h3>Profetional Skills</h3>
-        <span>HTML</span>
-        <div class="progress">
-          <div class="determinate" style="width: 90%;">
-            <i class="fa fa-circle"></i>
-          </div>
-        </div>
-        <span>CSS</span>
-        <div class="progress">
-          <div class="determinate" style="width: 80%;">
-            <i class="fa fa-circle"></i>
-          </div>
-        </div>
-        <span>JS</span>
-        <div class="progress">
-          <div class="determinate" style="width: 85%;">
-            <i class="fa fa-circle"></i>
-          </div>
-        </div>
-        <span>C#</span>
-        <div class="progress">
-          <div class="determinate" style="width: 90%;">
-            <i class="fa fa-circle"></i>
+        <div *ngFor="let skill of skills">
+          <span>{{skill.name}}</span>
+          <div class="progress">
+            <div class="determinate" [style.width.%]="skill.progress">
+              <i class="fa fa-circle"></i>
+            </div>
           </div>
         </div>
       </div>
     </aside>
   </div>
   <section>
-    <div>
+    <div *ngIf="works.length > 0">
       <div class="section-icon">
         <i class="fas fa-suitcase"></i>
       </div>
       <div class="section-content">
         <h2>Work Experience</h2>
-        <div class="section-content-wrapper">
+        <div class="section-content-wrapper" *ngFor="let work of works">
           <div>
-            <h3>UI/UX Designer</h3>
-            <span class="section-date">JAN 2013 - DEC 2013</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque esse illo amet cumque, deserunt eligendi impedit
-              quisquam recusandae laudantium dicta modi dolores culpa vero laboriosam perferendis itaque, sequi earum enim.</p>
+            <h3>{{work.position}}</h3>
+            <span class="section-date">{{work.dateIni | date:'MMM yyyy'}} - {{work.dateEnd | date:'MMM yyyy'}}</span>
+            <p>{{work.about}}</p>
           </div>
         </div>
-        <div class="section-content-wrapper">
-          <div>
-            <h3>UI/UX Designer</h3>
-            <span class="section-date">JAN 2013 - DEC 2013</span>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste facilis, dignissimos, accusamus sequi omnis, fuga atque labore veritatis minus assumenda magnam doloribus! Dicta cum commodi sequi! Eligendi laudantium illo quaerat.</p>
-          </div>
-        </div>
-        <div class="section-content-wrapper">
-          <div>
-            <h3>UI/UX Designer</h3>
-            <span class="section-date">JAN 2013 - DEC 2013</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque esse illo amet cumque, deserunt eligendi impedit
-              quisquam recusandae laudantium dicta modi dolores culpa vero laboriosam perferendis itaque, sequi earum enim.</p>
-          </div>
-        </div>
-        <div class="section-content-wrapper">
-            <div>
-              <h3>UI/UX Designer</h3>
-              <span class="section-date">JAN 2013 - DEC 2013</span>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque esse illo amet cumque, deserunt eligendi impedit
-                quisquam recusandae laudantium dicta modi dolores culpa vero laboriosam perferendis itaque, sequi earum enim.</p>
-            </div>
-          </div>
       </div>
     </div>
-    <div>
+    <div *ngIf="education.length > 0">
       <div class="section-icon">
         <i class="fas fa-graduation-cap"></i>
       </div>
       <div class="section-content">
-        <div class="section-content-wrapper">
-          <h2>Education</h2>
+        <h2>Education</h2>
+        <div class="section-content-wrapper" *ngFor="let edu of education">
           <div>
-            <h3>ISC<p>ITCH II</p></h3>
-            <span class="section-date">JAN 2013 - DEC 2013</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque esse illo amet cumque, deserunt eligendi impedit
-              quisquam recusandae laudantium dicta modi dolores culpa vero laboriosam perferendis itaque, sequi earum enim.</p>
+            <h3>{{edu.name}}
+              <p>{{edu.institute}}</p>
+            </h3>
+            <span class="section-date">{{edu.duration}} {{edu.unitOfDuration}}</span>
+            <p>{{edu.about}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-profiles" *ngIf="profiles.length > 0">
+      <div class="section-icon">
+        <i class="fas fa-plane"></i>
+      </div>
+      <div class="section-content">
+        <div class="section-content-wrapper">
+          <h2>Profiles</h2>
+          <div>
+            <ul>
+              <li *ngFor="let profile of profiles" [style.width.%]="100 / profiles.length">
+                <i class="{{profile.class}}" ><a href="{{profile.link}}"></a></i>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
     <div class="section-interestes">
       <div class="section-icon">
-          <i class="fas fa-plane"></i>
+        <i class="fas fa-plane"></i>
       </div>
       <div class="section-content">
         <div class="section-content-wrapper">
           <h2>Interestes</h2>
           <div>
             <ul>
-              <li><i class="fas fa-beer"></i></li>
-              <li><i class="fas fa-headphones"></i></li>
-              <li><i class="fas fa-comments"></i></li>
-              <li><i class="fas fa-coffee"></i></li>
-              <li><i class="fas fa-road"></i></li>
+              <li>
+                <i class="fas fa-beer"></i>
+              </li>
+              <li>
+                <i class="fas fa-headphones"></i>
+              </li>
+              <li>
+                <i class="fas fa-comments"></i>
+              </li>
+              <li>
+                <i class="fas fa-coffee"></i>
+              </li>
+              <li>
+                <i class="fas fa-road"></i>
+              </li>
             </ul>
           </div>
         </div>

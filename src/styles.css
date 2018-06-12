@@ -206,17 +206,19 @@ p {
   font-size: 12px;
   right: 0;
 }
-.section-interestes{
+.section-interestes, .section-profiles{
   min-height: initial;
 }
-.section-interestes ul{
+.section-interestes ul
+,.section-profiles ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
   font-size: 50px;
   color:var(--first-color);
 }
-.section-interestes ul li{
+.section-interestes ul li
+,.section-profiles ul li{
   display: inline-block;
   width: 19%;
 }
