@@ -1,41 +1,48 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
   crossorigin="anonymous">
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#en" (click)="onChangeLenguage('en')">English</a>
+    <a href="#es" (click)="onChangeLenguage('es')">Español</a>
+  </div>
+</div>
 <div class="container">
   <div class="sidebar">
     <div class="image">
       <div class="name">
         <h1>
-          {{name}}
+          {{info?.name}}
         </h1>
         <h3 class="position">
-          {{position}}
+          {{info?.position}}
         </h3>
       </div>
 
-      <img src="{{urlImage}}" />
+      <img src="{{info?.urlImage}}" />
       <!-- <img src="https://s.gravatar.com/avatar/cb5426da0f56e5bc2b26906ef54b8e5e?s=300"/> -->
     </div>
     <aside>
       <i class="icon fas fa-user"></i>
-      <span>{{about}}</span>
+      <span>{{info?.about}}</span>
     </aside>
     <aside class="phone">
       <i class="icon fas fa-phone"></i>
-      <span>{{phone}}</span>
+      <span>{{info?.phone}}</span>
     </aside>
     <aside class="mail">
       <i class="icon fas fa-envelope"></i>
-      <span>{{mail}}</span>
+      <span>{{info?.mail}}</span>
     </aside>
     <aside class="address">
       <i class="icon fas fa-home"></i>
-      <span>{{address}}</span>
+      <span>{{info?.address}}</span>
     </aside>
-    <aside class="skills" *ngIf="skills.length > 0">
+    <aside class="skills" *ngIf="info && info.skills">
       <i class="icon fas fa-calendar"></i>
       <div class="skills-bars">
         <h3>Profetional Skills</h3>
-        <div *ngFor="let skill of skills">
+        <div *ngFor="let skill of info.skills">
           <span>{{skill.name}}</span>
           <div class="progress">
             <div class="determinate" [style.width.%]="skill.progress">
@@ -47,13 +54,13 @@
     </aside>
   </div>
   <section>
-    <div *ngIf="works.length > 0">
+    <div *ngIf="info && info.works">
       <div class="section-icon">
         <i class="fas fa-suitcase"></i>
       </div>
       <div class="section-content">
         <h2>Work Experience</h2>
-        <div class="section-content-wrapper" *ngFor="let work of works">
+        <div class="section-content-wrapper" *ngFor="let work of info.works">
           <div>
             <h3>{{work.position}}</h3>
             <span class="section-date">{{work.dateIni | date:'MMM yyyy'}} - {{work.dateEnd | date:'MMM yyyy'}}</span>
@@ -62,13 +69,13 @@
         </div>
       </div>
     </div>
-    <div *ngIf="education.length > 0">
+    <div *ngIf="info && info.education">
       <div class="section-icon">
         <i class="fas fa-graduation-cap"></i>
       </div>
       <div class="section-content">
         <h2>Education</h2>
-        <div class="section-content-wrapper" *ngFor="let edu of education">
+        <div class="section-content-wrapper" *ngFor="let edu of info.education">
           <div>
             <h3>{{edu.name}}
               <p>{{edu.institute}}</p>
@@ -79,7 +86,7 @@
         </div>
       </div>
     </div>
-    <div class="section-profiles" *ngIf="profiles.length > 0">
+    <div class="section-profiles" *ngIf="info && info.profiles">
       <div class="section-icon">
         <i class="fas fa-plane"></i>
       </div>
@@ -88,8 +95,10 @@
           <h2>Profiles</h2>
           <div>
             <ul>
-              <li *ngFor="let profile of profiles" [style.width.%]="100 / profiles.length">
-                <i><a class="{{profile.class}}" target="_blank" [style.color]="profile.color" href="{{profile.link}}"></a></i>
+              <li *ngFor="let profile of info.profiles" [style.width.%]="100 / info.profiles.length">
+                <i>
+                  <a class="{{profile.class}}" target="_blank" [style.color]="profile.color" href="{{profile.link}}"></a>
+                </i>
               </li>
             </ul>
           </div>

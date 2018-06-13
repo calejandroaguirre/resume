@@ -1,0 +1,206 @@
+{
+    "title": "rsm",
+    "name": "Carlos Alejandro Aguirre López",
+    "position": "Software Developer",
+    "about": "Enim placeat sunt quos in, animi inventore maxime ab sequi odio sed omnis voluptas id doloremque expedita magnam veniam eaque accusamus aliquam hic, vel repellendus ipsum. Quas ratione eaque hic!",
+    "phone": "(614)239-39-02",
+    "mail": "calejandroaguirre@outlook.com",
+    "urlImage": "https://www.gravatar.com/avatar/00000000000000000000000000000000?s=300",
+    "address": "Paseos de urique #15501 Col. Paseos de Chihuahua, Chihuahua Chihuahua México",
+    "skills": [
+        {
+            "name": "HTML",
+            "progress": 85,
+            "order": 1
+        },
+        {
+            "name": "JS",
+            "progress": 85,
+            "order": 1
+        },
+        {
+            "name": "CSS",
+            "progress": 80,
+            "order": 1
+        },
+        {
+            "name": "C#",
+            "progress": 90,
+            "order": 1
+        },
+        {
+            "name": "VB .NET",
+            "progress": 80,
+            "order": 1
+        },
+        {
+            "name": "SQL",
+            "progress": 90,
+            "order": 1
+        },
+        {
+            "name": "T-SQL",
+            "progress": 85,
+            "order": 1
+        },
+        {
+            "name": "PL/SQL",
+            "progress": 70,
+            "order": 1
+        },
+        {
+            "name": "Angular",
+            "progress": 75,
+            "order": 1
+        },
+        {
+            "name": "Angular Js",
+            "progress": 30,
+            "order": 1
+        },
+        {
+            "name": "JQuery",
+            "progress": 90,
+            "order": 1
+        },
+        {
+            "name": "WebForms",
+            "progress": 90,
+            "order": 1
+        },
+        {
+            "name": "ASP.net MVC",
+            "progress": 90,
+            "order": 1
+        },
+        {
+            "name": "EF",
+            "progress": 80,
+            "order": 1
+        },
+        {
+            "name": "AZURE",
+            "progress": 70,
+            "order": 1
+        },
+        {
+            "name": "GIT",
+            "progress": 80,
+            "order": 1
+        },
+        {
+            "name": "TS",
+            "progress": 85,
+            "order": 1
+        },
+        {
+            "name": "JSON",
+            "progress": 90,
+            "order": 1
+        },
+        {
+            "name": "XML",
+            "progress": 85,
+            "order": 1
+        },
+        {
+            "name": "Bootstrap",
+            "progress": 95,
+            "order": 1
+        }
+    ],
+    "works": [
+        {
+            "company": "GammaPartners",
+            "dateIni": "2016-3-1",
+            "isCurrent": true,
+            "position": "Full-Stack",
+            "about": ""
+        },
+        {
+            "company": "Newton",
+            "dateIni": "2015-2-1",
+            "dateEnd": "2016-3-1",
+            "position": "Software Developer",
+            "about": ""
+        },
+        {
+            "company": "SI",
+            "dateIni": "2012-11-1",
+            "dateEnd": "2015-2-1",
+            "position": "Web Developer",
+            "about": ""
+        },
+        {
+            "company": "ICHISAL",
+            "dateIni": "2012-11-1",
+            "dateEnd": "2015-2-1",
+            "position": "Web Developer",
+            "about": ""
+        },
+        {
+            "company": "SCI",
+            "dateIni": "2012-1-1",
+            "dateEnd": "2012-11-1",
+            "position": "Software Developer",
+            "about": ""
+        }
+    ],
+    "education": [
+        {
+            "name": "Design patterns",
+            "about": "",
+            "duration": 22,
+            "unitOfDuration": "hrs",
+            "institute": "https://escuela.it"
+        },
+        {
+            "name": "Angular Routing",
+            "about": "",
+            "duration": 5,
+            "unitOfDuration": "hrs",
+            "institute": "https://pluralsight.com"
+        },
+        {
+            "name": "Angular Reactive Forms",
+            "about": "",
+            "duration": 4,
+            "unitOfDuration": "hrs",
+            "institute": "https://pluralsight.com"
+        },
+        {
+            "name": "Angular: Getting Started",
+            "about": "",
+            "duration": 5.4,
+            "unitOfDuration": "hrs",
+            "institute": "https://pluralsight.com"
+        },
+        {
+            "name": "Ingenieria en Sistemas Computacionales",
+            "about": "",
+            "duration": 4.5,
+            "unitOfDuration": "years",
+            "institute": "ITCHII"
+        }
+    ],
+    "profiles": [
+        {
+            "name": "github",
+            "link": "https://github.com/calejandroaguirre",
+            "class": "fab fa-github",
+            "color": "#000"
+        },
+        {
+            "name": "linkedIn",
+            "link": "https://www.linkedin.com/in/carlos-alejandro-aguirre-lopez-47794065/",
+            "class": "fab fa-linkedin-in",
+            "color": "#0077b5"
+        },
+        {
+            "name": "web",
+            "link": "https://calejandroaguirre.com",
+            "class": "fas fa-globe",
+            "color": "#f84757"
+        }
+    ]
+}
