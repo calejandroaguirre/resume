@@ -7,200 +7,215 @@
     "mail": "calejandroaguirre@outlook.com",
     "urlImage": "https://www.gravatar.com/avatar/00000000000000000000000000000000?s=300",
     "address": "Paseos de urique #15501 Col. Paseos de Chihuahua, Chihuahua Chihuahua México",
-    "skills": [
-        {
-            "name": "HTML",
-            "progress": 85,
-            "order": 1
+    "interestesTitle":"Intereses",
+    "skills": {
+        "general": {
+            "mainTitle": "Habilidades"
         },
-        {
-            "name": "JS",
-            "progress": 85,
-            "order": 1
+        "details": [
+            {
+                "name": "HTML",
+                "progress": 85,
+                "order": 1
+            },
+            {
+                "name": "JS",
+                "progress": 85,
+                "order": 1
+            },
+            {
+                "name": "CSS",
+                "progress": 80,
+                "order": 1
+            },
+            {
+                "name": "C#",
+                "progress": 90,
+                "order": 1
+            },
+            {
+                "name": "VB .NET",
+                "progress": 80,
+                "order": 1
+            },
+            {
+                "name": "SQL",
+                "progress": 90,
+                "order": 1
+            },
+            {
+                "name": "T-SQL",
+                "progress": 85,
+                "order": 1
+            },
+            {
+                "name": "PL/SQL",
+                "progress": 70,
+                "order": 1
+            },
+            {
+                "name": "Angular",
+                "progress": 75,
+                "order": 1
+            },
+            {
+                "name": "Angular Js",
+                "progress": 30,
+                "order": 1
+            },
+            {
+                "name": "JQuery",
+                "progress": 90,
+                "order": 1
+            },
+            {
+                "name": "WebForms",
+                "progress": 90,
+                "order": 1
+            },
+            {
+                "name": "ASP.net MVC",
+                "progress": 90,
+                "order": 1
+            },
+            {
+                "name": "EF",
+                "progress": 80,
+                "order": 1
+            },
+            {
+                "name": "AZURE",
+                "progress": 70,
+                "order": 1
+            },
+            {
+                "name": "GIT",
+                "progress": 80,
+                "order": 1
+            },
+            {
+                "name": "TS",
+                "progress": 85,
+                "order": 1
+            },
+            {
+                "name": "JSON",
+                "progress": 90,
+                "order": 1
+            },
+            {
+                "name": "XML",
+                "progress": 85,
+                "order": 1
+            },
+            {
+                "name": "Bootstrap",
+                "progress": 95,
+                "order": 1
+            }
+        ]
+    },
+    "work": {
+        "general": {
+            "mainTitle": "Experiencia"
         },
-        {
-            "name": "CSS",
-            "progress": 80,
-            "order": 1
+        "details": [
+            {
+                "company": "GammaPartners",
+                "dateIni": "2016-3-1",
+                "isCurrent": true,
+                "position": "Full-Stack",
+                "about": "Actualmente colaboro para gamma partners donde desarrollamos y le damos mantenimiento a de e-commers con .net y tambien nos toca apoyar en proyectos wordpress",
+                "text": "Actualidad"
+            },
+            {
+                "company": "Newton",
+                "dateIni": "2015-2-1",
+                "dateEnd": "2016-3-1",
+                "position": "Software Developer",
+                "about": "Desarrollamos proyectos web, aplicaciones de escritorio con wpf y aplicaciones para windows 8 y windows 8.1, también nos tocó participar en el desarrollo profesional de nuevo compañeros tomando el papel de mentor."
+            },
+            {
+                "company": "SI",
+                "dateIni": "2012-11-1",
+                "dateEnd": "2015-2-1",
+                "position": "Co-fundador",
+                "about": "Participe como co-founder en una startup donde trabajamos en levantamiento requerimientos, negociaciones, estimaciones e implementaciones de tecnologías y todo el proceso de desarrollo de software, aquí desarrollamos sistemas web para mejoras de procesos y sistemas para evaluaciones de desempeño."
+            },
+            {
+                "company": "ICHISAL",
+                "dateIni": "2012-11-1",
+                "dateEnd": "2015-2-1",
+                "position": "Web Developer",
+                "about": "Fui colaborador del gobierno del estado de Chihuahua donde de los retos más importantes fue el correcto manejo de grandes cantidades de datos y desarrollo de un sistema para un expediente electrónico único."
+            }
+        ]
+    },
+    "education": {
+        "general": {
+            "mainTitle": "Educación"
         },
-        {
-            "name": "C#",
-            "progress": 90,
-            "order": 1
+        "details": [
+            {
+                "name": "Design patterns",
+                "about": "Un patron de diseño es una solucion general repetible para un problema comun en el diseño del software. Un patron de diseño no es un diseño final que puede ser transformafo directamente en el codigo. Esto es un template para como resolver un problema que puede ser usado en muchas diferentes situaciones.",
+                "duration": 22,
+                "unitOfDuration": "hrs",
+                "institute": "https://escuela.it"
+            },
+            {
+                "name": "Angular Routing",
+                "about": "Hay mas que rutear en Angular 2+ que solo mover al usuario entre miltiples vistas en una aplicación. Este curso es acerca de como definir multiples rutas y pasar datos a rutas. Explorar como pre-cargar informacion para tu rutas. Es acerca de como agregar proteccion a las rutas. Agregara estylos y animacion, e incluso mejorar el performance con carga asincrona para rutas",
+                "duration": 5,
+                "unitOfDuration": "hrs",
+                "institute": "https://pluralsight.com"
+            },
+            {
+                "name": "Angular Reactive Forms",
+                "about": "Construir forms en Angular 2+ con enfoqu basado en plantillas, o un enfoque reactivo para definir el form model y validacion en nuestro componente",
+                "duration": 4,
+                "unitOfDuration": "hrs",
+                "institute": "https://pluralsight.com"
+            },
+            {
+                "name": "Angular: Getting Started",
+                "about": "Como crear grandiosas aplicaciones con Angular 2+ conceptos como: componentes, plantillas y servicios, aprendi como configurar el entorno, data binding y como trabajar con esos conceptos juntos, ademas de como construir componentes limpios con codigo fuertemente tipado, tambien componentes eredado y como usar inyecsion de dependencias para inyectar servicion, navegacion y ruteo",
+                "duration": 5.4,
+                "unitOfDuration": "hrs",
+                "institute": "https://pluralsight.com"
+            },
+            {
+                "name": "Ingeniería en Sistemas Computacionales",
+                "about": "La carrera de Ingeniería en Sistemas Computacionales tiene como objetivo formar profesionales capaces de diseñar y desarrollar sistemas de software que les permitan propiciar el fortalecimiento de la tecnología nacional, administrar proyectos de desarrollo de software, especificar y evaluar configuraciones de sistemas de cómputo en todo tipo de organizaciones donde se utilicen sistemas computacionales.",
+                "duration": 4.5,
+                "unitOfDuration": "años",
+                "institute": "ITCHII"
+            }
+        ]
+    },
+    "profiles": {
+        "general": {
+            "mainTitle": "Perfiles"
         },
-        {
-            "name": "VB .NET",
-            "progress": 80,
-            "order": 1
-        },
-        {
-            "name": "SQL",
-            "progress": 90,
-            "order": 1
-        },
-        {
-            "name": "T-SQL",
-            "progress": 85,
-            "order": 1
-        },
-        {
-            "name": "PL/SQL",
-            "progress": 70,
-            "order": 1
-        },
-        {
-            "name": "Angular",
-            "progress": 75,
-            "order": 1
-        },
-        {
-            "name": "Angular Js",
-            "progress": 30,
-            "order": 1
-        },
-        {
-            "name": "JQuery",
-            "progress": 90,
-            "order": 1
-        },
-        {
-            "name": "WebForms",
-            "progress": 90,
-            "order": 1
-        },
-        {
-            "name": "ASP.net MVC",
-            "progress": 90,
-            "order": 1
-        },
-        {
-            "name": "EF",
-            "progress": 80,
-            "order": 1
-        },
-        {
-            "name": "AZURE",
-            "progress": 70,
-            "order": 1
-        },
-        {
-            "name": "GIT",
-            "progress": 80,
-            "order": 1
-        },
-        {
-            "name": "TS",
-            "progress": 85,
-            "order": 1
-        },
-        {
-            "name": "JSON",
-            "progress": 90,
-            "order": 1
-        },
-        {
-            "name": "XML",
-            "progress": 85,
-            "order": 1
-        },
-        {
-            "name": "Bootstrap",
-            "progress": 95,
-            "order": 1
-        }
-    ],
-    "works": [
-        {
-            "company": "GammaPartners",
-            "dateIni": "2016-3-1",
-            "isCurrent": true,
-            "position": "Full-Stack",
-            "about": ""
-        },
-        {
-            "company": "Newton",
-            "dateIni": "2015-2-1",
-            "dateEnd": "2016-3-1",
-            "position": "Software Developer",
-            "about": ""
-        },
-        {
-            "company": "SI",
-            "dateIni": "2012-11-1",
-            "dateEnd": "2015-2-1",
-            "position": "Web Developer",
-            "about": ""
-        },
-        {
-            "company": "ICHISAL",
-            "dateIni": "2012-11-1",
-            "dateEnd": "2015-2-1",
-            "position": "Web Developer",
-            "about": ""
-        },
-        {
-            "company": "SCI",
-            "dateIni": "2012-1-1",
-            "dateEnd": "2012-11-1",
-            "position": "Software Developer",
-            "about": ""
-        }
-    ],
-    "education": [
-        {
-            "name": "Design patterns",
-            "about": "",
-            "duration": 22,
-            "unitOfDuration": "hrs",
-            "institute": "https://escuela.it"
-        },
-        {
-            "name": "Angular Routing",
-            "about": "",
-            "duration": 5,
-            "unitOfDuration": "hrs",
-            "institute": "https://pluralsight.com"
-        },
-        {
-            "name": "Angular Reactive Forms",
-            "about": "",
-            "duration": 4,
-            "unitOfDuration": "hrs",
-            "institute": "https://pluralsight.com"
-        },
-        {
-            "name": "Angular: Getting Started",
-            "about": "",
-            "duration": 5.4,
-            "unitOfDuration": "hrs",
-            "institute": "https://pluralsight.com"
-        },
-        {
-            "name": "Ingenieria en Sistemas Computacionales",
-            "about": "",
-            "duration": 4.5,
-            "unitOfDuration": "years",
-            "institute": "ITCHII"
-        }
-    ],
-    "profiles": [
-        {
-            "name": "github",
-            "link": "https://github.com/calejandroaguirre",
-            "class": "fab fa-github",
-            "color": "#000"
-        },
-        {
-            "name": "linkedIn",
-            "link": "https://www.linkedin.com/in/carlos-alejandro-aguirre-lopez-47794065/",
-            "class": "fab fa-linkedin-in",
-            "color": "#0077b5"
-        },
-        {
-            "name": "web",
-            "link": "https://calejandroaguirre.com",
-            "class": "fas fa-globe",
-            "color": "#f84757"
-        }
-    ]
+        "details": [
+            {
+                "name": "github",
+                "link": "https://github.com/calejandroaguirre",
+                "class": "fab fa-github",
+                "color": "#000"
+            },
+            {
+                "name": "linkedIn",
+                "link": "https://www.linkedin.com/in/carlos-alejandro-aguirre-lopez-47794065/",
+                "class": "fab fa-linkedin-in",
+                "color": "#0077b5"
+            },
+            {
+                "name": "web",
+                "link": "https://calejandroaguirre.com",
+                "class": "fas fa-globe",
+                "color": "#f84757"
+            }
+        ]
+    }
 }

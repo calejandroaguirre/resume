@@ -2,205 +2,220 @@
     "title": "rsm",
     "name": "Carlos Alejandro Aguirre López",
     "position": "Software Developer",
-    "about": "Enim placeat sunt quos in, animi inventore maxime ab sequi odio sed omnis voluptas id doloremque expedita magnam veniam eaque accusamus aliquam hic, vel repellendus ipsum. Quas ratione eaque hic!",
+    "about": "I am software developer in .net technologies over 8 years of expertise. I am an enthusiastic of the technology and I try to teach what I know about it, I like the treat with the people and I continue learning",
     "phone": "(614)239-39-02",
     "mail": "calejandroaguirre@outlook.com",
     "urlImage": "https://www.gravatar.com/avatar/00000000000000000000000000000000?s=300",
     "address": "Paseos de urique #15501 Col. Paseos de Chihuahua, Chihuahua Chihuahua México",
-    "skills": [
-        {
-            "name": "HTML",
-            "progress": 85,
-            "order": 1
+    "interestesTitle":"Interestes",
+    "skills": {
+        "general": {
+            "mainTitle": "Skills"
         },
-        {
-            "name": "JS",
-            "progress": 85,
-            "order": 1
+        "details": [
+            {
+                "name": "HTML",
+                "progress": 85,
+                "order": 1
+            },
+            {
+                "name": "JS",
+                "progress": 85,
+                "order": 1
+            },
+            {
+                "name": "CSS",
+                "progress": 80,
+                "order": 1
+            },
+            {
+                "name": "C#",
+                "progress": 90,
+                "order": 1
+            },
+            {
+                "name": "VB .NET",
+                "progress": 80,
+                "order": 1
+            },
+            {
+                "name": "SQL",
+                "progress": 90,
+                "order": 1
+            },
+            {
+                "name": "T-SQL",
+                "progress": 85,
+                "order": 1
+            },
+            {
+                "name": "PL/SQL",
+                "progress": 70,
+                "order": 1
+            },
+            {
+                "name": "Angular",
+                "progress": 75,
+                "order": 1
+            },
+            {
+                "name": "Angular Js",
+                "progress": 30,
+                "order": 1
+            },
+            {
+                "name": "JQuery",
+                "progress": 90,
+                "order": 1
+            },
+            {
+                "name": "WebForms",
+                "progress": 90,
+                "order": 1
+            },
+            {
+                "name": "ASP.net MVC",
+                "progress": 90,
+                "order": 1
+            },
+            {
+                "name": "EF",
+                "progress": 80,
+                "order": 1
+            },
+            {
+                "name": "AZURE",
+                "progress": 70,
+                "order": 1
+            },
+            {
+                "name": "GIT",
+                "progress": 80,
+                "order": 1
+            },
+            {
+                "name": "TS",
+                "progress": 85,
+                "order": 1
+            },
+            {
+                "name": "JSON",
+                "progress": 90,
+                "order": 1
+            },
+            {
+                "name": "XML",
+                "progress": 85,
+                "order": 1
+            },
+            {
+                "name": "Bootstrap",
+                "progress": 95,
+                "order": 1
+            }
+        ]
+    },
+    "work": {
+        "general": {
+            "mainTitle": "Work Experience"
         },
-        {
-            "name": "CSS",
-            "progress": 80,
-            "order": 1
+        "details": [
+            {
+                "company": "GammaPartners",
+                "dateIni": "2016-3-1",
+                "isCurrent": true,
+                "position": "Full-Stack",
+                "about": " I collaborate with the develop and maintenance of an e-commerce by a client of GammaPartners. Also, I support with projects in WordPress.",
+                "text": "Present"
+            },
+            {
+                "company": "Newton",
+                "dateIni": "2015-2-1",
+                "dateEnd": "2016-3-1",
+                "position": "Software Developer",
+                "about": "I collaborated in Newton. Here we developed web projects with .net MVC, desktop applications with wpf and windows 8.1, also, I supported with the development of the colleagues as a coach"
+            },
+            {
+                "company": "SI",
+                "dateIni": "2012-11-1",
+                "dateEnd": "2015-2-1",
+                "position": "Co-Founder",
+                "about": "I was co-founder in a startup where I took part of getting requirenments, negotiations, estimates, deployments of technologies and whole process of software development, here we development web systems for the process improvements and systems for performance assessment"
+            },
+            {
+                "company": "ICHISAL",
+                "dateIni": "2012-11-1",
+                "dateEnd": "2015-2-1",
+                "position": "Web Developer",
+                "about": "I worked for the state government of chihuahua where the biggest challenge was the management of large amount of data and a system development for a medical record"
+            }
+        ]
+    },
+    "education": {
+        "general": {
+            "mainTitle": "Education"
         },
-        {
-            "name": "C#",
-            "progress": 90,
-            "order": 1
+        "details": [
+            {
+                "name": "Design patterns",
+                "about": "In software engineering, a design pattern is a general repeatable solution to a commonly occurring problem in software design. A design pattern isn't a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.",
+                "duration": 22,
+                "unitOfDuration": "hrs",
+                "institute": "https://escuela.it"
+            },
+            {
+                "name": "Angular Routing",
+                "about": "There is more to routing in Angular version 2+ than just moving the user between multiple views of an application. Angular Routing, you'll discover how to define multiple routes and pass data to routes. Next, you'll explore how to preload data for your views and group your routes. Then, you'll learn how to guard your routes. Finally, you'll go through how to add styling and animation, and even improve performance by asynchronously loading your routes. When you are finished with this course, you'll have the knowledge you need to leverage more sophisticated routing features and support more real-world routing scenarios.",
+                "duration": 5,
+                "unitOfDuration": "hrs",
+                "institute": "https://pluralsight.com"
+            },
+            {
+                "name": "Angular Reactive Forms",
+                "about": "You can build forms in Angular with a template-driven approach using HTML and data binding, or a Reactive approach by defining the form model and validation in our component code. In this course, Angular Reactive Forms, you'll first learn how build Reactive forms. Next you'll learn how to validate user-entered data Finally, you'll wrap up learning how to save that data using HTTP. By the end of this course, you will have a simple, but fully operational Angular application that includes a Reactive form with full create, read, update, and delete (CRUD) support. You can use this application as a reference for your own development.",
+                "duration": 4,
+                "unitOfDuration": "hrs",
+                "institute": "https://pluralsight.com"
+            },
+            {
+                "name": "Angular: Getting Started",
+                "about": " In this course, you will learn how to create great web apps and stay up to date on the latest app development technologies, by comimg up to speed quickly with Angular's components, templates, and services. You will get there by learning major topics like to set up your environment, learning about components, templates, and data binding and how they work together, discover how to build clean components with strongly-typed code, as well as building nested components and how to use dependency injection to inject the services you build and how to retrieve data using HTTP, navigation and routing. By the end of this course, you will be up to date on all the latest Angular knowledge and you will be able to use Angular to create great apps in the future. Before you begin, make sure you are already familiar with the basics of JavaScript, HTML, and CSS, and to get the most from this course, it’s helpful to have some exposure to object-oriented programming concepts. And after this course, you’ll be ready to move on to additional courses in the Angular Learning Path, including Angular CLI, Angular Forms, and beyond. I hope you’ll join me, and I look forward to helping you on your learning journey here at Pluralsight.",
+                "duration": 5.4,
+                "unitOfDuration": "hrs",
+                "institute": "https://pluralsight.com"
+            },
+            {
+                "name": "computer systems engineer",
+                "about": "Has a goal training professionals able to design and build software systems that allow strengthen the technology national, management projects of software, configurate systems in all kind of organizations",
+                "duration": 4.5,
+                "unitOfDuration": "years",
+                "institute": "ITCHII"
+            }
+        ]
+    },
+    "profiles": {
+        "general": {
+            "mainTitle": "Profiles"
         },
-        {
-            "name": "VB .NET",
-            "progress": 80,
-            "order": 1
-        },
-        {
-            "name": "SQL",
-            "progress": 90,
-            "order": 1
-        },
-        {
-            "name": "T-SQL",
-            "progress": 85,
-            "order": 1
-        },
-        {
-            "name": "PL/SQL",
-            "progress": 70,
-            "order": 1
-        },
-        {
-            "name": "Angular",
-            "progress": 75,
-            "order": 1
-        },
-        {
-            "name": "Angular Js",
-            "progress": 30,
-            "order": 1
-        },
-        {
-            "name": "JQuery",
-            "progress": 90,
-            "order": 1
-        },
-        {
-            "name": "WebForms",
-            "progress": 90,
-            "order": 1
-        },
-        {
-            "name": "ASP.net MVC",
-            "progress": 90,
-            "order": 1
-        },
-        {
-            "name": "EF",
-            "progress": 80,
-            "order": 1
-        },
-        {
-            "name": "AZURE",
-            "progress": 70,
-            "order": 1
-        },
-        {
-            "name": "GIT",
-            "progress": 80,
-            "order": 1
-        },
-        {
-            "name": "TS",
-            "progress": 85,
-            "order": 1
-        },
-        {
-            "name": "JSON",
-            "progress": 90,
-            "order": 1
-        },
-        {
-            "name": "XML",
-            "progress": 85,
-            "order": 1
-        },
-        {
-            "name": "Bootstrap",
-            "progress": 95,
-            "order": 1
-        }
-    ],
-    "works": [
-        {
-            "company": "GammaPartners",
-            "dateIni": "2016-3-1",
-            "isCurrent": true,
-            "position": "Full-Stack",
-            "about": ""
-        },
-        {
-            "company": "Newton",
-            "dateIni": "2015-2-1",
-            "dateEnd": "2016-3-1",
-            "position": "Software Developer",
-            "about": ""
-        },
-        {
-            "company": "SI",
-            "dateIni": "2012-11-1",
-            "dateEnd": "2015-2-1",
-            "position": "Web Developer",
-            "about": ""
-        },
-        {
-            "company": "ICHISAL",
-            "dateIni": "2012-11-1",
-            "dateEnd": "2015-2-1",
-            "position": "Web Developer",
-            "about": ""
-        },
-        {
-            "company": "SCI",
-            "dateIni": "2012-1-1",
-            "dateEnd": "2012-11-1",
-            "position": "Software Developer",
-            "about": ""
-        }
-    ],
-    "education": [
-        {
-            "name": "Design patterns",
-            "about": "",
-            "duration": 22,
-            "unitOfDuration": "hrs",
-            "institute": "https://escuela.it"
-        },
-        {
-            "name": "Angular Routing",
-            "about": "",
-            "duration": 5,
-            "unitOfDuration": "hrs",
-            "institute": "https://pluralsight.com"
-        },
-        {
-            "name": "Angular Reactive Forms",
-            "about": "",
-            "duration": 4,
-            "unitOfDuration": "hrs",
-            "institute": "https://pluralsight.com"
-        },
-        {
-            "name": "Angular: Getting Started",
-            "about": "",
-            "duration": 5.4,
-            "unitOfDuration": "hrs",
-            "institute": "https://pluralsight.com"
-        },
-        {
-            "name": "Ingenieria en Sistemas Computacionales",
-            "about": "",
-            "duration": 4.5,
-            "unitOfDuration": "years",
-            "institute": "ITCHII"
-        }
-    ],
-    "profiles": [
-        {
-            "name": "github",
-            "link": "https://github.com/calejandroaguirre",
-            "class": "fab fa-github",
-            "color": "#000"
-        },
-        {
-            "name": "linkedIn",
-            "link": "https://www.linkedin.com/in/carlos-alejandro-aguirre-lopez-47794065/",
-            "class": "fab fa-linkedin-in",
-            "color": "#0077b5"
-        },
-        {
-            "name": "web",
-            "link": "https://calejandroaguirre.com",
-            "class": "fas fa-globe",
-            "color": "#f84757"
-        }
-    ]
+        "details": [
+            {
+                "name": "github",
+                "link": "https://github.com/calejandroaguirre",
+                "class": "fab fa-github",
+                "color": "#000"
+            },
+            {
+                "name": "linkedIn",
+                "link": "https://www.linkedin.com/in/carlos-alejandro-aguirre-lopez-47794065/",
+                "class": "fab fa-linkedin-in",
+                "color": "#0077b5"
+            },
+            {
+                "name": "web",
+                "link": "https://calejandroaguirre.com",
+                "class": "fas fa-globe",
+                "color": "#f84757"
+            }
+        ]
+    }
 }

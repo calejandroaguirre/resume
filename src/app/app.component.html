@@ -5,6 +5,7 @@
   <div class="dropdown-content">
     <a href="#en" (click)="onChangeLenguage('en')">English</a>
     <a href="#es" (click)="onChangeLenguage('es')">Español</a>
+    <!-- <a href="#es" (click)="onSendToPDF()">PDF</a> -->
   </div>
 </div>
 <div class="container">
@@ -18,9 +19,7 @@
           {{info?.position}}
         </h3>
       </div>
-
       <img src="{{info?.urlImage}}" />
-      <!-- <img src="https://s.gravatar.com/avatar/cb5426da0f56e5bc2b26906ef54b8e5e?s=300"/> -->
     </div>
     <aside>
       <i class="icon fas fa-user"></i>
@@ -41,8 +40,8 @@
     <aside class="skills" *ngIf="info && info.skills">
       <i class="icon fas fa-calendar"></i>
       <div class="skills-bars">
-        <h3>Profetional Skills</h3>
-        <div *ngFor="let skill of info.skills">
+        <h3>{{info.skills.general.mainTitle}}</h3>
+        <div *ngFor="let skill of info.skills.details">
           <span>{{skill.name}}</span>
           <div class="progress">
             <div class="determinate" [style.width.%]="skill.progress">
@@ -54,34 +53,36 @@
     </aside>
   </div>
   <section>
-    <div *ngIf="info && info.works">
+    <div *ngIf="info && info.work">
       <div class="section-icon">
-        <i class="fas fa-suitcase"></i>
+        <i class="fas fa-suitcase icon"></i>
       </div>
       <div class="section-content">
-        <h2>Work Experience</h2>
-        <div class="section-content-wrapper" *ngFor="let work of info.works">
+        <h2>{{info.work.general.mainTitle}}</h2>
+        <div class="section-content-wrapper" *ngFor="let work of info.work.details">
           <div>
             <h3>{{work.position}}</h3>
-            <span class="section-date">{{work.dateIni | date:'MMM yyyy'}} - {{work.dateEnd | date:'MMM yyyy'}}</span>
+            <span class="section-date">{{work.dateIni | date:'MMM yyyy'}} - {{getDateEnd(work)}}</span>
             <p>{{work.about}}</p>
           </div>
         </div>
       </div>
     </div>
-    <div *ngIf="info && info.education">
+    <div *ngIf="info && info.education" class="section-education">
       <div class="section-icon">
-        <i class="fas fa-graduation-cap"></i>
+        <i class="fas fa-graduation-cap icon"></i>
       </div>
       <div class="section-content">
-        <h2>Education</h2>
-        <div class="section-content-wrapper" *ngFor="let edu of info.education">
+        <h2>{{info.education.general.mainTitle}}</h2>
+        <div class="section-content-wrapper" *ngFor="let edu of info.education.details">
           <div>
             <h3>{{edu.name}}
               <p>{{edu.institute}}</p>
             </h3>
             <span class="section-date">{{edu.duration}} {{edu.unitOfDuration}}</span>
-            <p>{{edu.about}}</p>
+            <div>
+              <p>{{edu.about}}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -92,10 +93,10 @@
       </div>
       <div class="section-content">
         <div class="section-content-wrapper">
-          <h2>Profiles</h2>
+          <h2>{{info.profiles.general.mainTitle}}</h2>
           <div>
             <ul>
-              <li *ngFor="let profile of info.profiles" [style.width.%]="100 / info.profiles.length">
+              <li *ngFor="let profile of info.profiles.details" [style.width.%]="100 / info.profiles.details.length">
                 <i>
                   <a class="{{profile.class}}" target="_blank" [style.color]="profile.color" href="{{profile.link}}"></a>
                 </i>
@@ -111,7 +112,7 @@
       </div>
       <div class="section-content">
         <div class="section-content-wrapper">
-          <h2>Interestes</h2>
+          <h2>{{info?.interestesTitle}}</h2>
           <div>
             <ul>
               <li>

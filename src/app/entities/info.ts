@@ -12,8 +12,9 @@ export interface IInfo{
     mail:string;
     urlImage:string;
     address:string;
-    skills:Array<ISkill>;
-    works:Array<IWork>;
-    education:Array<ICourse>;
-    profiles:Array<IProfile>;
+    interestesTitle:string;
+    skills:ISkill;
+    work:IWork;
+    education:ICourse;
+    profiles:IProfile;
 }
