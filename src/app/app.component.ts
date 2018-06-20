@@ -40,7 +40,7 @@ export class AppComponent implements OnInit {
   constructor(private _infoService: InfoService) { }
 
   ngOnInit(): void {
-    this.lenguageSelected = location.hash.replace("#","");
+    this.lenguageSelected = location.hash.replace("#", "");
     this.getInfo();
   }
   public getInfo(): void {
@@ -48,33 +48,33 @@ export class AppComponent implements OnInit {
       .subscribe((info) => { this.info = info });
   }
 
-  onChangeLenguage(lenguage: string) : void {
-    if(this.lenguageSelected !== lenguage){
+  onChangeLenguage(lenguage: string): void {
+    if (this.lenguageSelected !== lenguage) {
       this.lenguageSelected = lenguage;
       this.getInfo();
     }
   }
 
-  onSendToPrint() : void{
+  onSendToPrint(): void {
     window.print();
   }
-  onSendToPDF() : void{
+  onSendToPDF(): void {
     var doc = new jsPDF();
 
     // We'll make our own renderer to skip this editor
     var specialElementHandlers = {
-      '#editor': function(element, renderer){
+      '#editor': function (element, renderer) {
         return true;
       },
-      '.controls': function(element, renderer){
+      '.controls': function (element, renderer) {
         return true;
       }
     };
-    
+
     // All units are in the set measurement for the document
     // This can be changed to "pt" (points), "mm" (Default), "cm", "in"
     doc.fromHTML(window.document.getElementsByTagName("body")[0], 15, 15, {
-      'width': 170, 
+      'width': 170,
       'elementHandlers': specialElementHandlers
     });
 
@@ -90,8 +90,8 @@ export class AppComponent implements OnInit {
     //   {
     //     'width': 180//,'elementHandlers': elementHandler
     //   });
-  
-  // doc.output("dataurlnewwindow");
+
+    // doc.output("dataurlnewwindow");
     // window.open("https://phantomjscloud.com/api/browser/v2/a-demo-key-with-low-quota-per-ip-address/?request={url:%22about:blank%22,renderType:%22pdf%22,content:" + document.querySelector('.container').outerHTML +"}");
 
     // doc.fromHTML(document.querySelector('.container').innerHTML,20,20);
@@ -105,13 +105,56 @@ export class AppComponent implements OnInit {
     doc.output("dataurlnewwindow");
   }
 
-  getDateEnd(work:IDetailsWork):string{
-    let result :string;
+  onDownloadPDF(){
+    let url:string = '/assets/curriculum-{0}.pdf';
+    url = url.replace('{0}',this.lenguageSelected);
+    this.downloadFile(url);
+  }
+
+  downloadFile(url: string) {
+    //iOS devices do not support downloading. We have to inform user about this.
+    if (/(iP)/g.test(navigator.userAgent)) {
+      //alert('Your device does not support files downloading. Please try again in desktop browser.');
+      window.open(url, '_blank');
+      return false;
+    }
+
+    //Creating new link node.
+    var link = document.createElement('a');
+    link.href = url;
+    link.setAttribute('target', '_blank');
+
+    if (link.download !== undefined) {
+      //Set HTML5 download attribute. This will prevent file from opening if supported.
+      var fileName = url.substring(url.lastIndexOf('/') + 1, url.length);
+      link.download = fileName;
+    }
+
+    //Dispatching click event.
+    if (document.createEvent) {
+      var e = document.createEvent('MouseEvents');
+      e.initEvent('click', true, true);
+      link.dispatchEvent(e);
+      link.remove();
+      return true;
+    }
+
+    // Force file download (whether supported by server).
+    if (url.indexOf('?') === -1) {
+      url += '?download';
+    }
+
+    window.open(url, '_blank');
+    return true;
+  }
+
+  getDateEnd(work: IDetailsWork): string {
+    let result: string;
     var datePipe = new DatePipe("en-US");
-    if(!work.dateEnd && work.isCurrent){
-      result = work.text ? work.text : datePipe.transform(new Date(),"MMM yyyy")
-    }else{
-      result = datePipe.transform(work.dateEnd,"MMM yyyy");
+    if (!work.dateEnd && work.isCurrent) {
+      result = work.text ? work.text : datePipe.transform(new Date(), "MMM yyyy")
+    } else {
+      result = datePipe.transform(work.dateEnd, "MMM yyyy");
     }
     return result;
   }

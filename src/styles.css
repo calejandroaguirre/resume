@@ -231,60 +231,62 @@ p {
   text-decoration: none;
 }
 
-/* Dropdown Button */
-
-.dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-
-/* The container <div> - needed to position the dropdown content */
-
-.dropdown {
+/* Main */
+#subjectsNav {
+  list-style: none;
   position: absolute;
-  display: inline-block;
   z-index: 1;
 }
 
-/* Dropdown Content (Hidden by Default) */
+#subjectsNav a{
+  text-decoration: none;
+  color: #000;
+}
 
-.dropdown-content {
+#subjectsNav>li>a{
+    background-color: var(--first-color);
+    color: white;
+    padding: 10px;
+    font-size: 10px;
+    border: none;
+}
+
+#subjectsNav li {
+  display: block;
+  position: relative;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#subjectsNav>li ul li:hover{
+  background-color: #ddd;
+}
+
+#subjectsNav li:hover > ul {
+  display: block;
+}
+/* Sub-menu */
+#subjectsNav ul {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  list-style: none;
+  left: 0;        
+  margin: 0;
+  padding: 0;
 }
-
-/* Links inside the dropdown */
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
+#subjectsNav ul li {
+  float: none;
   display: block;
 }
 
-/* Change color of dropdown links on hover */
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+#subjectsNav ul ul {
+  top: 0;
+  left: 150px;
 }
 
 @media only screen and (max-width:800px) {
@@ -323,7 +325,7 @@ p {
   .sidebar aside {
     font-size: 8pt;
   }
-  .dropdown, .section-profiles, .section-interestes, .skills .progress, h3>p {
+  #subjectsNav, .section-profiles, .section-interestes, .skills .progress, h3>p {
     display: none;
   }
   aside {
