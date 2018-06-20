@@ -1,13 +1,28 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
   crossorigin="anonymous">
-<div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-    <a href="#en" (click)="onChangeLenguage('en')">English</a>
-    <a href="#es" (click)="onChangeLenguage('es')">Español</a>
-    <!-- <a href="#es" (click)="onSendToPDF()">PDF</a> -->
-  </div>
-</div>
+<ul id="subjectsNav">
+  <li>
+    <a href="#" title="SUBJECTS">Options</a>
+    <ul>
+      <li>
+        <a href="#" (click)="onSendToPrint()">Print</a>
+      </li>
+      <li><a href="#" (click)="onDownloadPDF()">PDF</a></li>
+      <li>
+        <a href="#" title="EXTRA">Lenguage</a>
+        <ul>
+          <li>
+            <a href="#en" (click)="onChangeLenguage('en')">English</a>
+          </li>
+          <li>
+            <a href="#es" (click)="onChangeLenguage('es')">Español</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
 <div class="container">
   <div class="sidebar">
     <div class="image">
